@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+}
+header {
+  background: #01688f;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.top-buttons button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+.table-select {
+  background: #4cd137;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+}
+.categories button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.menu-section {
+  text-align: center;
+  padding: 20px;
+}
+#cart {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+#cart ul {
+  list-style: none;
+  padding: 0;
+}
+#cart ul li {
+  background: #f1f1f1;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+footer {
+  background: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}

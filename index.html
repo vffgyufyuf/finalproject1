@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Melt & More</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Melt & More</h1>
+    <div class="top-buttons">
+      <button>🔔 Call Waiter</button>
+      <button>📝 Register Visit</button>
+      <button onclick="toggleCart()">🛒 Cart</button>
+    </div>
+  </header>
+
+  <div class="table-select">Please select table</div>
+
+  <div class="categories">
+    <button class="active">🍽️ All categories</button>
+    <button>🍟 Appetizers</button>
+    <button>🥗 Salad</button>
+    <button>🍕 Pizza</button>
+    <button>🍔 Burger</button>
+  </div>
+
+  <div class="menu-section">
+    <select id="itemSelect">
+      <option value="Appetizers">Appetizers</option>
+      <option value="Salad">Salad</option>
+      <option value="Pizza">Pizza</option>
+      <option value="Burger">Burger</option>
+    </select>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <div id="cart" class="hidden">
+    <h3>🛒 Your Cart</h3>
+    <ul id="cartItems"></ul>
+    <form method="POST" action="cart.php">
+      <input type="hidden" id="cartData" name="cartData" />
+      <button type="submit">Checkout</button>
+    </form>
+  </div>
+
+  <footer>
+    <h3>Slice The Moment</h3>
+    <p>📍 123 Saida Main Street, Food City</p>
+    <p>Phone: (961) 456-7890 | Email: contact@MeltAndMore.com</p>
+  </footer>
+
+  <script src="math.js"></script>
+</body>
+</html>
